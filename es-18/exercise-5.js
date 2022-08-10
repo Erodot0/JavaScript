@@ -23,6 +23,6 @@ function factorial(x) {
 }
 
 factorial = memoize(factorial);
-console.log(factorial(10));
+console.log("Calculating result for " + factorial(10));
 console.log(factorial(6));
 console.log(factorial(5));
