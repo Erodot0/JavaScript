@@ -8,7 +8,6 @@
   // code here 
   const container = document.querySelector("#container")
   async function todos() {
-    try {
       const response = await fetch("https://jsonplaceholder.typicode.com/todos/4")
       const responseJSON = await response.json();
 
@@ -21,11 +20,7 @@
 
       container.append(input)
       input.setAttribute('checked', responseJSON.completed);
-
-    } catch (error) {
-      console.log(`Error: ${error}`)
-    }
-  }
+    } 
 
   todos()
 </script>
